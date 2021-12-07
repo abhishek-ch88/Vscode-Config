@@ -1,0 +1,19 @@
+{
+	"printAdjList": {
+		"prefix": "printList",
+		"body": [
+			"void printadjList(int n)",
+			"{",
+			"    for1(i, n+1)",
+			"    {",
+			"        cout << i << \" \";",
+			"        for (int u : adj[ i ])",
+			"            cout << u << \" \";",
+			"        cout << endl;",
+			"    }",
+			"}",
+			""
+		],
+		"description": "printAdjList"
+	}
+}

@@ -1,0 +1,26 @@
+{
+  "factor": {
+  "prefix": "factors",
+  "body": [
+    "vector<ll> factor()",
+    "{",
+    "    vll vec ,v;",
+    "    for(i=1;i*i<=n;i++)",
+    "    {",
+    "        if(n%i==0)",
+    "        {",
+    "            v.pb(i);",
+    "            if(i*i!=n)",
+    "            {",
+    "                vec.pb(n / i);",
+    "            }",
+    "        }",
+    "    }",
+    "    reverse(all(vec));",
+    "    vec.insert(vec.begin(),v.begin(),v.end());",
+    "    return v;",
+    "}  ",
+    "  "
+  ],
+  "description": "factor"
+}

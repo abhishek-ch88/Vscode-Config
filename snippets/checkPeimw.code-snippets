@@ -1,0 +1,17 @@
+{
+	"checkPrime": {
+		"prefix": "checkPrime",
+		"body": [
+			"bool isPrime(ll n)",
+			"{",
+			"	for(i=2;i*i<=n;i++)",
+			"	{",
+			"		if (n % i == 0)",
+			"			return false;",
+			"	}",
+			"	return true;",
+			"}"
+		],
+		"description": "checkPrime"
+	}
+}

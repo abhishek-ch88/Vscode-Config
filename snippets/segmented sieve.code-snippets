@@ -1,0 +1,40 @@
+{
+  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  "segmented sieve": {
+    "prefix": "segmentedSieve",
+    "body": [
+      "vector<bool> segmentedSieve(long long L, long long R) {",
+      "    // generate all primes up to sqrt(R)",
+      "    long long lim = sqrt(R);",
+      "    vector<bool> mark(lim + 1, true);",
+      "    mark[0]=mark[1]=false;",
+      "    vector<long long> primes;",
+      "    primes.emplace_back(2);",
+      "    for (long long i = 3; i <= lim; i+=2) {",
+      "        if (mark[i]) {",
+      "            primes.emplace_back(i);",
+      "            for (long long j = i * i; j <= lim; j += i)",
+      "                mark[j] = false;",
+      "        }",
+      "    }",
+      "",
+      "    vector<bool> isPrime(R - L + 1, true);",
+      "    for (long long i : primes)",
+      "        for (long long j = max(i * i, (L + i - 1) / i * i); j <= R; j += i)",
+      "            isPrime[j - L] = false;",
+      "    if (L == 1)",
+      "        isPrime[0] = false;",
+      "    return isPrime;",
+      "",
+      "//representation in int main if if(p[i-l])cout << i;",
+      "}"
+    ],
+    "description": "segmented sieve"
+  }
+}

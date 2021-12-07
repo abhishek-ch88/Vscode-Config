@@ -1,0 +1,36 @@
+{
+	"profesor": {
+		"body": [
+			"/************\r",
+			"Author :- Profesor(Abhishek)\r",
+			"**********/\r",
+			"#include <bits/stdc++.h>\r",
+			"using namespace std;\r",
+			"#define ll long long\r",
+			"#define fast ios_base::sync_with_stdio(0);cin.tie(0);\r",
+			"#define endl\r",
+			"\" , \r",
+			"n\r",
+			"#define fori(i,a,b) for(ll i=a;i<b;i++)\r",
+			"#define forr(i,a,b) for(ll i=a;i>=b;i--)\r",
+			"#define forit(it,x) for (auto it=(x).begin();it!=(x).end(); it++)\r",
+			"#define all(x) (x).begin(),(x).end()\r",
+			"#define allr(x) (x).rbegin(),(x).rend()\r",
+			"#define eb emplace_back\r",
+			"#define pb push_back\r",
+			"#define mp make_pair\r",
+			"#define fi first\r",
+			"#define se second\r",
+			"#define sll set<ll>\r",
+			"#define vll vector<ll>\r",
+			"#define msl map<string,ll>\r",
+			"#define mll map<ll,ll>\r",
+			"ll i, j, k;\r",
+			"int main()\r",
+			"{\r",
+			"\r",
+			"return 0;\r",
+			"}"
+		]
+	}
+}
